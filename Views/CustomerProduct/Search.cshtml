@@ -1,0 +1,6 @@
+﻿@model IEnumerable<AmazonWebsite.ViewModels.ProductVM>
+@{
+    ViewData["Title"] = "Search";
+    Layout = "ListProduct";
+}
+@await Html.PartialAsync("ProductItem", Model)
