@@ -1,0 +1,30 @@
+﻿@model AmazonWebsite.ViewModels.LoginVM
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_CustomerLayout";
+
+}
+
+<div class="container-fluid py-5" style="margin-top:150px">
+    <div class="container py-5">
+        <div class="text-danger" asp-validation-summary="All"></div> @* Validation cho toan` form *@
+        <h1 class="mb-4">Login</h1>
+        <form asp-action="Login" asp-controller="Customer" asp-route-returnurl="@ViewBag.ReturnUrl">
+            <div class="form-item">
+                <label asp-for="@Model.UserName" class="form-label my-3">User name<sup>*</sup></label>
+                <input asp-for="@Model.UserName" class="form-control">
+                <span asp-validation-for="@Model.UserName" class="text-danger"></span>
+            </div>
+            <div class="form-item">
+                <label asp-for="@Model.Password" class="form-label my-3">Password<sup>*</sup></label>
+                <input asp-for="@Model.Password" type="password" class="form-control">
+                <span asp-validation-for="@Model.Password" class="text-danger"></span>
+            </div>
+            <a asp-action="ForgotPassword" asp-controller="Customer">Forgot password?</a>
+            <div class="row g-4 text-center align-items-center justify-content-center pt-4">
+                <button type="submit" class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary">Login</button>
+                
+            </div>
+        </form>
+    </div>
+</div>
