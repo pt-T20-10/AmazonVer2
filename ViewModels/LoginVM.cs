@@ -1,17 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 namespace AmazonWebsite.ViewModels
 {
-    public class LoginVN
+    public class LoginVM
     {
         [Display(Name = "Tên đăng nhập")]
-        [Required(ErrorMessage ="*") ]
+        [Required(ErrorMessage ="Vui lòng nhập tài khoản") ]
         [MaxLength(20, ErrorMessage ="Tên đăng nhập tối đa 20 kí tự")]
-        public string UserName { get; set; }
+        public required string UserName { get; set; }
 
 
         [Display(Name = "Password")]
-        [Required(ErrorMessage ="*")]
+        [Required(ErrorMessage ="Vui lòng nhập mật khẩu")]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public required string Password { get; set; }
     }
 }

@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using AmazonWebsite.Areas.Admin.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using AmazonWebsite.Helpers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,22 +22,29 @@ builder.Services.AddSession(options =>
 });
 //https://docs.automapper.org/en/stable/Dependency-injection.html
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie (options =>
+{
+    options.LoginPath ="/Customer/Login ";
+    options.AccessDeniedPath = "/AccessDenied";
+});
+                                                                                                 
+
 var app = builder.Build();
 
-// add service xác thực cookie
-//builder.Services.AddAuthentication
-//    (CookieAuthenticationDefaults.AuthenticationScheme).AddCookie( options =>
-//    {
-        
-//    } ); 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseSession();
+
 app.UseRouting();
+
+app.UseSession();
+
+app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.UseAuthorization();
 

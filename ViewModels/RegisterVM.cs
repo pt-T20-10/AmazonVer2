@@ -6,19 +6,19 @@ namespace AmazonWebsite.ViewModels
     {
         [Key]
         [Display(Name = "User Name")]
-        [Required(ErrorMessage ="*")]
-        [MaxLength(20,ErrorMessage ="Tên đăng nhập tối đa 20 kí tự")]
-        public string CustomerId { get; set; }
+        [Required(ErrorMessage = "*")]
+        [MaxLength(20, ErrorMessage = "Tên đăng nhập tối đa 20 kí tự")]
+        public string CustomerId { get; set; } = null!; 
 
         [Display(Name="Password")]
         [Required(ErrorMessage = "*")]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public required string Password { get; set; }
 
         [Display(Name ="Full Name")]
         [Required(ErrorMessage = "*")]
         [MaxLength(50, ErrorMessage = "Họ và tên tối đa 50 kí tự")]
-        public string Name { get; set; }
+        public string Name { get; set; } =null!;
 
         [Display(Name="Gender")]
         public bool Sex { get; set; } = true;
@@ -33,13 +33,13 @@ namespace AmazonWebsite.ViewModels
 
         [Display(Name = "Phone")]
         [MaxLength(24, ErrorMessage = "Số điện tối đa 24 kí tự")]
-        [RegularExpression("^(0|\\+84)(3[2-9]|5[6|8|9]|7[0|6|7|8|9]|8[1-6|8-9]|9[0-9])[0-9]{7}$", ErrorMessage ="Số điện thoại không hợp lệ")] //Check số điện thoại Việt Nam
+        [RegularExpression(@"0[9875]\d{8}", ErrorMessage = "Chưa đúng định dạng di động Việt Nam")] //Check số điện thoại Việt Nam
         public string? PhoneNumbers { get; set; }
 
         [Display(Name = "Email")]
         [DataType(DataType.EmailAddress)]
-        [EmailAddress(ErrorMessage ="Email này không phù hợp")]
-        public string Email { get; set; } 
+        [EmailAddress(ErrorMessage = "Email này không phù hợp")]
+        public string Email { get; set; } = null!;
 
 
         public string? Image { get; set; }

@@ -17,11 +17,11 @@ namespace AmazonWebsite.Helpers
 
         public static string ToSHA512Hash(this string password, string? saltKey)
         {
-            SHA512Managed sha512 = new SHA512Managed();
-            byte[] encryptedSHA512 = sha512.ComputeHash(Encoding.UTF8.GetBytes(string.Concat(password, saltKey)));
-            sha512.Clear();
-
-            return Convert.ToBase64String(encryptedSHA512);
+            using (var sha512 = SHA512.Create())  // Sử dụng phương thức Create thay vì SHA512Managed
+            {
+                byte[] encryptedSHA512 = sha512.ComputeHash(Encoding.UTF8.GetBytes(string.Concat(password, saltKey)));
+                return Convert.ToBase64String(encryptedSHA512);
+            }
         }
 
         public static string ToMd5Hash(this string password, string? saltKey)

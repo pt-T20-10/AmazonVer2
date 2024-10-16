@@ -8,7 +8,7 @@ namespace AmazonWebsite.Helpers
         {
             try
             {
-                var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", "Hinh", folder, file.FileName);
+                var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Hinh", "Hinh", "KhachHang", file.FileName);
                 using (var myfile = new FileStream(fullPath, FileMode.CreateNew))
                 {
                     file.CopyTo(myfile);
@@ -34,5 +34,13 @@ namespace AmazonWebsite.Helpers
             }
             return stringbuilder.ToString();
         }
+        public static int GenerateRandomID()
+        {
+            Random random = new Random();
+            int id = random.Next(10000, 100000); // Tạo số ngẫu nhiên từ 10000 đến 99999
+            return id;
+        }
+
     }
+
 }

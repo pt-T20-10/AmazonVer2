@@ -8,10 +8,10 @@ namespace AmazonWebsite.Helpers
     {
         public  AutoMapperProfile()
         {
-            CreateMap<RegisterVM, Customer>();
-                //.ForMember(cus => cus.CustomerId, option => option.MapFrom(RegisterVM =>
-                //RegisterVM.CustomerId))
-                //.ReverseMap();
+            CreateMap<RegisterVM, Customer>()
+                .ForMember(cus => cus.CustomerId, option => option.MapFrom(RegisterVM =>
+                RegisterVM.CustomerId))
+                .ReverseMap();
                 
         }
     }

@@ -1,6 +1,6 @@
 ﻿using AmazonWebsite.Areas.Admin.Models;
 using AmazonWebsite.ViewModels;
-using AmazonWebsite.ViewModels;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
