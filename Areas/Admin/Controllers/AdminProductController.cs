@@ -57,10 +57,25 @@ namespace AmazonWebsite.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,ProductName,AliasName,TypeId,Unit,Price,Image,Description")] Product product)
+        public async Task<IActionResult> Create([Bind("ProductId,ProductName,AliasName,TypeId,Unit,Price,Image,Description")] Product product, IFormFile ImageFile)
         {
             if (ModelState.IsValid)
             {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    // Tạo đường dẫn để lưu file
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Hinh/Hinh/HangHoa", ImageFile.FileName);
+
+                    // Lưu file vào server
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    // Cập nhật đường dẫn hình ảnh vào thuộc tính Image
+                    product.Image = ImageFile.FileName;
+                }
+
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -89,38 +104,55 @@ namespace AmazonWebsite.Areas.Admin.Controllers
         // POST: Admin/AdminProduct/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,ProductName,AliasName,TypeId,Unit,Price,Image,Description")] Product product)
+       // POST: Admin/AdminProduct/Edit/5
+[HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> Edit(int id, [Bind("ProductId,ProductName,AliasName,TypeId,Unit,Price,Image,Description")] Product product, IFormFile ImageFile)
+{
+    if (id != product.ProductId)
+    {
+        return NotFound();
+    }
+
+    if (ModelState.IsValid)
+    {
+        try
         {
-            if (id != product.ProductId)
+            if (ImageFile != null && ImageFile.Length > 0)
+            {
+                // Tạo đường dẫn để lưu file
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Hinh/Hinh/HangHoa", ImageFile.FileName);
+
+                // Lưu file vào server
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await ImageFile.CopyToAsync(stream);
+                }
+
+                // Cập nhật đường dẫn hình ảnh vào thuộc tính Image
+                product.Image = ImageFile.FileName;
+            }
+
+            _context.Update(product);
+            await _context.SaveChangesAsync();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!ProductExists(product.ProductId))
             {
                 return NotFound();
             }
-
-            if (ModelState.IsValid)
+            else
             {
-                try
-                {
-                    _context.Update(product);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductExists(product.ProductId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                throw;
             }
-            ViewData["TypeId"] = new SelectList(_context.ProductTypes, "TypeId", "TypeId", product.TypeId);
-            return View(product);
         }
+        return RedirectToAction(nameof(Index));
+    }
+    ViewData["TypeId"] = new SelectList(_context.ProductTypes, "TypeId", "TypeId", product.TypeId);
+    return View(product);
+}
+
 
         // GET: Admin/AdminProduct/Delete/5
         public async Task<IActionResult> Delete(int? id)

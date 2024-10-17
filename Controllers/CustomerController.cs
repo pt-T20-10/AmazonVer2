@@ -63,14 +63,14 @@ namespace AmazonWebsite.Controllers
         [HttpGet]
         public IActionResult Login(string? ReturnUrl) 
         {
-            ViewBag.ReturnUrl = ReturnUrl;
+            ViewBag.ReturnUrl = ReturnUrl.Trim();
             return View();
         }
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM model, string? ReturnUrl) 
         {
 
-            ViewBag.ReturnUrl = ReturnUrl;
+            ViewBag.ReturnUrl = ReturnUrl.Trim();
             if (ModelState.IsValid) 
             {
                 var customer = _context.Customers.SingleOrDefault(cus => 
@@ -98,11 +98,8 @@ namespace AmazonWebsite.Controllers
                                 new Claim(ClaimTypes.Email, customer.Email),
                                 new Claim(ClaimTypes.Name, customer.Name),
                                 new Claim(Setting.CLAIM_CUSTOMERID, customer.CustomerId),
-
-                                //Claim - role động
-                                new Claim(ClaimTypes.Role,"Customer")
                             };
-                            var claimsIdentity = new ClaimsIdentity(claims, "Login");
+                            var claimsIdentity = new ClaimsIdentity(claims,"Login");
                             var claimsPrincipal  = new ClaimsPrincipal(claimsIdentity);
                             await HttpContext.SignInAsync(claimsPrincipal);
                             if (Url.IsLocalUrl(ReturnUrl)) 
@@ -124,9 +121,9 @@ namespace AmazonWebsite.Controllers
         [Authorize]
         public IActionResult Profile()
         {
-            return View();  
+            return View();
         }
-      
+
         #endregion
         [Authorize]
         public async Task<IActionResult> Logout()

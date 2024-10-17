@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<div class="container-fluid py-5" style="margin-top:150px">
+    <div class=" d-flex flex-column justify-content-center align-items-center">
+    <h2>Welcome @Context.User.Identity.Name</h2>
+        <div><a class="btn btn-primary" asp-controller="Customer" asp-action="Logout" class="dropdown-item">Logout</a></div>
+</div>
+</div>

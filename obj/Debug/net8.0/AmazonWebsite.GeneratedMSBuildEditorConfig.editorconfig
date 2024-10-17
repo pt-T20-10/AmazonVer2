@@ -46,6 +46,66 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DdXN0b21lclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDelegation/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZWxlZ2F0aW9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDelegation/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZWxlZ2F0aW9uXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDelegation/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZWxlZ2F0aW9uXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDelegation/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZWxlZ2F0aW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDelegation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZWxlZ2F0aW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDepartment/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZXBhcnRtZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDepartment/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZXBhcnRtZW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDepartment/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZXBhcnRtZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDepartment/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZXBhcnRtZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminDepartment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5EZXBhcnRtZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminOrderDetail/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlckRldGFpbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminOrderDetail/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlckRldGFpbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminOrderDetail/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlckRldGFpbFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminOrderDetail/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlckRldGFpbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminOrderDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlckRldGFpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminOrder/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -64,6 +124,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminOrder/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5PcmRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminProductType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qcm9kdWN0VHlwZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminProductType/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qcm9kdWN0VHlwZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminProductType/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qcm9kdWN0VHlwZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminProductType/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qcm9kdWN0VHlwZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminProductType/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qcm9kdWN0VHlwZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/AdminProduct/Create.cshtml]
@@ -106,26 +186,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5TdGFmZlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/ProductAdmin/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/ProductAdmin/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/ProductAdmin/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/ProductAdmin/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/ProductAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdEFkbWluXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -136,6 +196,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Views/Cart/Checkout.cshtml]
@@ -174,12 +242,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJQcm9kdWN0XFNlYXJjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Views/Customer/CustomerProfile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJQcm9maWxlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Views/Customer/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Views/Customer/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VStudio/Projects/AmazonWebsite/AmazonWebsite/Views/Customer/Register.cshtml]
