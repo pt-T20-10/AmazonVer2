@@ -5,10 +5,12 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+<div class="container mt-5 text-center">
+    <h1 class="display-4 text-primary font-weight-bold">Product type</h1>
+</div>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-success m-1" asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -22,31 +24,26 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td class="fw-bold">
                 @Html.DisplayFor(modelItem => item.TypeName)
             </td>
-            <td>
+            <td class="fw-bold">
                 @Html.DisplayFor(modelItem => item.TypeAliasName)
             </td>
-            <td>
+                <td class="fw-bold">
                 @Html.DisplayFor(modelItem => item.Description)
-            </td>
+            </td class="fw-bold">
+          
             <td>
-                @Html.DisplayFor(modelItem => item.Image)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.TypeId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TypeId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TypeId">Delete</a>
+                    <a class="btn btn-success m-1 d-block" asp-action="Edit" asp-route-id="@item.TypeId">Edit</a> 
+                    <a class="btn btn-success m-1 d-block" asp-action="Details" asp-route-id="@item.TypeId">Details</a> 
+                    <a class="btn btn-danger m-1 d-block" asp-action="Delete" asp-route-id="@item.TypeId">Delete</a>
             </td>
         </tr>
 }

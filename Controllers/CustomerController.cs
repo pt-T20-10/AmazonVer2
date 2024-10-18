@@ -63,14 +63,14 @@ namespace AmazonWebsite.Controllers
         [HttpGet]
         public IActionResult Login(string? ReturnUrl) 
         {
-            ViewBag.ReturnUrl = ReturnUrl.Trim();
+            ViewBag.ReturnUrl = ReturnUrl;
             return View();
         }
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM model, string? ReturnUrl) 
         {
 
-            ViewBag.ReturnUrl = ReturnUrl.Trim();
+            ViewBag.ReturnUrl = ReturnUrl;
             if (ModelState.IsValid) 
             {
                 var customer = _context.Customers.SingleOrDefault(cus => 

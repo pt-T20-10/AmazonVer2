@@ -1,21 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-namespace AmazonWebsite.Areas.Admin.Models;
-
-public partial class Delegation
+namespace AmazonWebsite.Areas.Admin.Models
 {
-    public int DelegationId { get; set; }
+    public partial class Delegation
+    {
+        [Key] // Đánh dấu thuộc tính là khóa chính
+        public int DelegationId { get; set; }
 
-    public string StaffId { get; set; } = null!;
+        [Required(ErrorMessage = "StaffId is required.")]
+        public string StaffId { get; set; } = null!;
 
-    public string DepartmentId { get; set; } = null!;
+        [Required(ErrorMessage = "DepartmentId is required.")]
+        public string DepartmentId { get; set; } = null!;
 
-    public DateTime? DelegationDate { get; set; }
+        [DataType(DataType.Date)]
+        [Display(Name = "Delegation Date")]
+        [Required(ErrorMessage = "Delegation Date is required.")]
+        public DateTime? DelegationDate { get; set; }
 
-    public bool? Validation { get; set; }
+        public bool? Validation { get; set; }
 
-    public virtual Department Department { get; set; } = null!;
+        public virtual Department Department { get; set; } = null!;
 
-    public virtual Staff Staff { get; set; } = null!;
+        public virtual Staff Staff { get; set; } = null!;
+    }
 }

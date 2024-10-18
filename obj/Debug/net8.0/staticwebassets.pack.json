@@ -289,6 +289,14 @@
       "PackagePath": "staticwebassets\\Hinh\\Hinh\\Others\\shopping_cart.png"
     },
     {
+      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\Hinh\\Hinh\\UserAvatar\\16714790.jpeg",
+      "PackagePath": "staticwebassets\\Hinh\\Hinh\\UserAvatar\\16714790.jpeg"
+    },
+    {
+      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\Hinh\\Hinh\\UserAvatar\\avatar.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\Hinh\\UserAvatar\\avatar.jpg"
+    },
+    {
       "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\cart.html",
       "PackagePath": "staticwebassets\\cart.html"
     },
@@ -321,6 +329,10 @@
       "PackagePath": "staticwebassets\\img\\.png"
     },
     {
+      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\Amazon Brand Storr Banner.jpeg",
+      "PackagePath": "staticwebassets\\img\\Amazon Brand Storr Banner.jpeg"
+    },
+    {
       "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\amazon-logo-white.png",
       "PackagePath": "staticwebassets\\img\\amazon-logo-white.png"
     },
@@ -337,16 +349,8 @@
       "PackagePath": "staticwebassets\\img\\amazon-mobile-logo.png"
     },
     {
-      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\avatar.jpg",
-      "PackagePath": "staticwebassets\\img\\avatar.jpg"
-    },
-    {
       "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\baner-1.png",
       "PackagePath": "staticwebassets\\img\\baner-1.png"
-    },
-    {
-      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\banner-fruits.jpg",
-      "PackagePath": "staticwebassets\\img\\banner-fruits.jpg"
     },
     {
       "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\best-product-1.jpg",
@@ -423,34 +427,6 @@
     {
       "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\hero-img.jpg",
       "PackagePath": "staticwebassets\\img\\hero-img.jpg"
-    },
-    {
-      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\icons\\01cada77a0a7d326d85b7969fe26a728.jpg",
-      "PackagePath": "staticwebassets\\img\\icons\\01cada77a0a7d326d85b7969fe26a728.jpg"
-    },
-    {
-      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\icons\\buy-again.png",
-      "PackagePath": "staticwebassets\\img\\icons\\buy-again.png"
-    },
-    {
-      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\icons\\cart-icon.png",
-      "PackagePath": "staticwebassets\\img\\icons\\cart-icon.png"
-    },
-    {
-      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\icons\\checkmark.png",
-      "PackagePath": "staticwebassets\\img\\icons\\checkmark.png"
-    },
-    {
-      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\icons\\checkout-lock-icon.png",
-      "PackagePath": "staticwebassets\\img\\icons\\checkout-lock-icon.png"
-    },
-    {
-      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\icons\\hamburger-menu.png",
-      "PackagePath": "staticwebassets\\img\\icons\\hamburger-menu.png"
-    },
-    {
-      "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\icons\\search-icon.png",
-      "PackagePath": "staticwebassets\\img\\icons\\search-icon.png"
     },
     {
       "Id": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\wwwroot\\img\\payment.png",

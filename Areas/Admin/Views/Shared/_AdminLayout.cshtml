@@ -26,11 +26,13 @@
     <link href="~/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid fixed-top topbar bg-secondary d-flex justify-content-around align-items-center">
+    <div class="container-fluid fixed-top topbar bg-secondary d-flex justify-content-around align-items-center flex-wrap">
         <div class="rounded">
             <a asp-action="Index">
                 <img class="w-50" src="~/img/amazon-logo.png" alt="Amazon Logo" />
             </a>
+            <br/>
+            <div class="fw-bold" style="margin-left:10px"> <i class="fa fa-forward"></i> <a asp-action="Index" asp-controller="CustomerHome" asp-area="">Back to client</a> <i class="fa fa-backward"></i></div>
         </div>
         <div class="modal-title text-white fw-bold display-6">
             Admin Dashboard <i class="fa fa-toolbox"></i>
@@ -42,7 +44,7 @@
             <a class="btn btn-light m-2" asp-action="Index" asp-controller="AdminOrder">Order <i class="fa fa-money-bill"></i></a>
             <a class="btn btn-light m-2" asp-action="Index" asp-controller="AdminOrderDetail">Order detail <i class="fa fa-clipboard"></i></a>
             <a class="btn btn-light m-2" asp-action="Index" asp-controller="AdminStaff">Staff <i class="fa fa-user-tie"></i></a>
-            <a class="btn btn-light m-2" asp-action="Index" asp-controller="AdminDelegation">Delegation <i class="fa fa-user-plus"></i></a>
+            <a class="btn btn-light m-2" asp-action="Index" asp-controller="AdminDepartment">Department <i class="fa fa-user-plus"></i></a>
         </div>
 
     </div>

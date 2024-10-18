@@ -54,10 +54,25 @@ namespace AmazonWebsite.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CustomerId,Password,Name,Sex,DateOfBirth,Address,PhoneNumbers,Email,Image,Validation,Role,RandomKey")] Customer customer)
+        public async Task<IActionResult> Create([Bind("CustomerId,Password,Name,Sex,DateOfBirth,Address,PhoneNumbers,Email,Image,Validation,Role,RandomKey")] Customer customer, IFormFile ImageFile)
         {
             if (ModelState.IsValid)
             {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    // Tạo đường dẫn để lưu file
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Hinh/Hinh/UserAvatar", ImageFile.FileName);
+
+                    // Lưu file vào server
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    // Cập nhật đường dẫn hình ảnh vào thuộc tính Image
+                    customer.Image = ImageFile.FileName;
+                }
+
                 _context.Add(customer);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -86,7 +101,7 @@ namespace AmazonWebsite.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("CustomerId,Password,Name,Sex,DateOfBirth,Address,PhoneNumbers,Email,Image,Validation,Role,RandomKey")] Customer customer)
+        public async Task<IActionResult> Edit(string id, [Bind("CustomerId,Password,Name,Sex,DateOfBirth,Address,PhoneNumbers,Email,Image,Validation,Role,RandomKey")] Customer customer, IFormFile ImageFile)
         {
             if (id != customer.CustomerId)
             {
@@ -95,6 +110,21 @@ namespace AmazonWebsite.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
+                if (ImageFile != null && ImageFile.Length > 0)
+                {
+                    // Tạo đường dẫn để lưu file
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Hinh/Hinh/UserAvatar", ImageFile.FileName);
+
+                    // Lưu file vào server
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(stream);
+                    }
+
+                    // Cập nhật đường dẫn hình ảnh vào thuộc tính Image
+                    customer.Image = ImageFile.FileName;
+                }
+
                 try
                 {
                     _context.Update(customer);

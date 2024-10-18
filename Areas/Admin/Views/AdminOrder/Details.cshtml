@@ -5,10 +5,12 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Details</h1>
+<div class="container mt-5 text-center">
+    <h1 class="display-4 text-primary font-weight-bold">Detail</h1>
+    <h2>Order</h2>
+</div>
 
-<div>
-    <h4>Order</h4>
+<div class="d-flex justify-content-center">
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -86,6 +88,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.OrderId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-success mt-3" asp-action="Edit" asp-route-id="@Model?.OrderId">Edit</a>
+    <a class="btn btn-success mt-3" asp-action="Index">Back to List</a>
 </div>

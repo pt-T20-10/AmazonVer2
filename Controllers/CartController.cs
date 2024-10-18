@@ -51,7 +51,7 @@ namespace AmazonWebsite.Controllers
             }
             HttpContext.Session.Set<List<CartItem>>(Setting.Cart_key, mCart);
 
-            return RedirectToAction("index");
+            return Redirect("/CustomerProduct");
         }
 
         public IActionResult RemovefromCart(int id) 
@@ -128,7 +128,7 @@ namespace AmazonWebsite.Controllers
                     
                     HttpContext.Session.Set<List<CartItem>>(Setting.Cart_key,new List<CartItem>());
 
-                    return View("Success");
+                    return Redirect("/");
                 }
                 
                 catch

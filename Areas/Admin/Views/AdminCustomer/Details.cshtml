@@ -21,10 +21,6 @@
             <td>@Html.DisplayFor(model => model.Name)</td>
         </tr>
         <tr>
-            <th>@Html.DisplayNameFor(model => model.Sex)</th>
-            <td>@Html.DisplayFor(model => model.Sex)</td>
-        </tr>
-        <tr>
             <th>@Html.DisplayNameFor(model => model.DateOfBirth)</th>
             <td>@Html.DisplayFor(model => model.DateOfBirth)</td>
         </tr>
@@ -41,8 +37,7 @@
             <td>@Html.DisplayFor(model => model.Email)</td>
         </tr>
         <tr>
-            <th>@Html.DisplayNameFor(model => model.Image)</th>
-            <td>@Html.DisplayFor(model => model.Image)</td>
+            <img class ="rounded-circle" width="100" height="100" src="~/Hinh/Hinh/UserAvatar/@Model.Image" />
         </tr>
         <tr>
             <th>@Html.DisplayNameFor(model => model.Validation)</th>
@@ -52,13 +47,11 @@
             <th>@Html.DisplayNameFor(model => model.Role)</th>
             <td>@Html.DisplayFor(model => model.Role)</td>
         </tr>
-        <tr>
-            <th>@Html.DisplayNameFor(model => model.RandomKey)</th>
-            <td>@Html.DisplayFor(model => model.RandomKey)</td>
-        </tr>
+     
     </table>
 
 <div>
     <a asp-action="Edit" class="btn btn-success m-1" asp-route-id="@Model?.CustomerId">Edit</a> 
     <a class="btn btn-success m-1" asp-action="Index">Back to List</a>
+</div>
 </div>

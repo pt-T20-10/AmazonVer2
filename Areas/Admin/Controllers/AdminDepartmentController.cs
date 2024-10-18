@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AmazonWebsite.Areas.Admin.Models;
 
-namespace AmazonWebsite.Areas.Admin
+namespace AmazonWebsite.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class AdminDepartmentController : Controller

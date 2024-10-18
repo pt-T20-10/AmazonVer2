@@ -20,13 +20,7 @@
                 @Html.DisplayNameFor(model => model.CustomerId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sex)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.DateOfBirth)
@@ -62,13 +56,7 @@
                     @Html.DisplayFor(modelItem => item.CustomerId)
                 </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Sex)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DateOfBirth)
@@ -83,7 +71,7 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Image)
+                    <img class="rounded-circle" width="100" height="100" src="~/Hinh/Hinh/UserAvatar/@item.Image" alt="@item.Name" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Validation)
@@ -91,9 +79,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Role)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RandomKey)
-            </td>
+          
             <td>
                     <a class="btn btn-success m-1 d-block" asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a>
                     <a class="btn btn-success m-1 d-block" asp-action="Details" asp-route-id="@item.CustomerId">Details</a>
