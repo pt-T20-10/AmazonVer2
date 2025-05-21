@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\AmazonWebsite.csproj": {}
+    "D:\\Cloud\\Nhom7_DH22TIN09\\Nhom7_DH22TIN09\\Projects\\AmazonWebsite\\AmazonWebsite\\AmazonWebsite.csproj": {}
   },
   "projects": {
-    "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\AmazonWebsite.csproj": {
+    "D:\\Cloud\\Nhom7_DH22TIN09\\Nhom7_DH22TIN09\\Projects\\AmazonWebsite\\AmazonWebsite\\AmazonWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\AmazonWebsite.csproj",
+        "projectUniqueName": "D:\\Cloud\\Nhom7_DH22TIN09\\Nhom7_DH22TIN09\\Projects\\AmazonWebsite\\AmazonWebsite\\AmazonWebsite.csproj",
         "projectName": "AmazonWebsite",
-        "projectPath": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\AmazonWebsite.csproj",
+        "projectPath": "D:\\Cloud\\Nhom7_DH22TIN09\\Nhom7_DH22TIN09\\Projects\\AmazonWebsite\\AmazonWebsite\\AmazonWebsite.csproj",
         "packagesPath": "C:\\Users\\pntoa\\.nuget\\packages\\",
-        "outputPath": "D:\\VStudio\\Projects\\AmazonWebsite\\AmazonWebsite\\obj\\",
+        "outputPath": "D:\\Cloud\\Nhom7_DH22TIN09\\Nhom7_DH22TIN09\\Projects\\AmazonWebsite\\AmazonWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "D:\\DevExpress\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\pntoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +46,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -52,43 +55,35 @@
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[12.0.0, )"
+              "version": "[12.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[9.0.5, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[9.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
-            },
-            "System.Security.AccessControl": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
-            "System.Security.Permissions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -110,7 +105,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

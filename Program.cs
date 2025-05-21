@@ -24,7 +24,7 @@ builder.Services.AddSession(options =>
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie (options =>
 {
-    options.LoginPath ="/Customer/Login ";
+    options.LoginPath ="/Customer/Login";
     options.AccessDeniedPath = "/AccessDenied";
 });
                                                                                                  

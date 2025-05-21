@@ -5,22 +5,22 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+<div class="container mt-5 text-center">
+    <h1 class="display-4 text-primary font-weight-bold">Customer</h1>
+</div>
+
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-success m-1" asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Password)
+                @Html.DisplayNameFor(model => model.CustomerId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sex)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.DateOfBirth)
@@ -52,14 +52,11 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerId)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Sex)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.DateOfBirth)
@@ -74,7 +71,7 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Image)
+                    <img class="rounded-circle" width="100" height="100" src="~/Hinh/Hinh/UserAvatar/@item.Image" alt="@item.Name" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Validation)
@@ -82,13 +79,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Role)
             </td>
+          
             <td>
-                @Html.DisplayFor(modelItem => item.RandomKey)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CustomerId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
+                    <a class="btn btn-success m-1 d-block" asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a>
+                    <a class="btn btn-success m-1 d-block" asp-action="Details" asp-route-id="@item.CustomerId">Details</a>
+                    <a class="btn btn-danger m-1 d-block" asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
             </td>
         </tr>
 }

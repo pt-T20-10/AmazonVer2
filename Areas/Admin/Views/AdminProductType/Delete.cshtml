@@ -1,0 +1,43 @@
+﻿@model AmazonWebsite.Areas.Admin.Models.ProductType
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5 text-center">
+    <h1 class="display-4 text-primary font-weight-bold">Delete</h1>
+    <h2>Product detail</h2>
+    <h3 class="text-danger">Are you sure you want to delete this?</h3>
+</div>
+
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TypeName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TypeName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TypeAliasName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TypeAliasName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="TypeId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <a class="btn btn-success m-1" asp-action="Index">Back to List</a>
+    </form>
+</div>

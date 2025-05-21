@@ -3,6 +3,7 @@ using AmazonWebsite.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using AmazonWebsite.Helpers;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AmazonWebsite.Controllers
 {
@@ -17,11 +18,13 @@ namespace AmazonWebsite.Controllers
    
         public List<CartItem> Cart => HttpContext.Session.Get<List<CartItem>>(Setting.Cart_key) ?? new List<CartItem>();
 
+     
         public IActionResult Index()
         {
             return View(Cart);
         }
 
+        [Authorize]     
         public IActionResult AddToCart(int id, int quantity =1)
         {
             var mCart = Cart;
@@ -49,7 +52,7 @@ namespace AmazonWebsite.Controllers
             }
             HttpContext.Session.Set<List<CartItem>>(Setting.Cart_key, mCart);
 
-            return RedirectToAction("index");
+            return Redirect("/CustomerProduct");
         }
 
         public IActionResult RemovefromCart(int id) 
@@ -65,6 +68,7 @@ namespace AmazonWebsite.Controllers
 
             return RedirectToAction("index");
         }
+       
         [HttpGet]
         public IActionResult Checkout()
         {
@@ -75,6 +79,8 @@ namespace AmazonWebsite.Controllers
             } 
             return View(cart);
         }
+
+        [Authorize]
         [HttpPost]
         public IActionResult Checkout(CheckoutVM model)
         {
@@ -123,7 +129,7 @@ namespace AmazonWebsite.Controllers
                     
                     HttpContext.Session.Set<List<CartItem>>(Setting.Cart_key,new List<CartItem>());
 
-                    return View("Success");
+                    return Redirect("/");
                 }
                 
                 catch

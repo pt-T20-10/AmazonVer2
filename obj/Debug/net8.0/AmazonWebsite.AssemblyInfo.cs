@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmazonWebsite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09dd39b00cddc461d5cd94f753a8e3f7d36e1e4d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3db90e7f7ea18505e1e1723fac841fbe267f2eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmazonWebsite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmazonWebsite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
