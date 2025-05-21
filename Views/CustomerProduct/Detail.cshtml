@@ -4,7 +4,6 @@
     Layout = "~/Views/Shared/_CustomerLayout.cshtml";
 }
 
-
 <div class="container-fluid page-header py-5">
     <h1 class="text-center text-white display-6">Shop Detail</h1>
     <ol class="breadcrumb justify-content-center mb-0">
@@ -22,7 +21,6 @@
                     <div class="col-lg-6">
                         <div class="border rounded">
                             <a href="#">
-               
                                 <img src="~/Hinh/Hinh/HangHoa/@Model.Image" class="img-fluid rounded" alt="@Model.ProductName">
                             </a>
                         </div>
@@ -40,20 +38,20 @@
                         </div>
                         <p class="mb-4">@Model.Details</p>
                         <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.ProducID">
-                        <div class="input-group quantity mb-5" style="width: 100px;">
-                            <div class="input-group-btn">
-                                <button class="btn btn-sm btn-minus rounded-circle bg-light border" type="button">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
-                            <input type="text" class="form-control form-control-sm text-center border-0" value="1" name="quantity">
-                            <div class="input-group-btn">
+                            <div class="input-group quantity mb-5" style="width: 100px;">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-minus rounded-circle bg-light border" type="button">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control form-control-sm text-center border-0" value="1" name="quantity">
+                                <div class="input-group-btn">
                                     <button class="btn btn-sm btn-plus rounded-circle bg-light border" type="button">
-                                    <i class="fa fa-plus"></i>
-                                </button>
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <button class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</button>
+                            <button class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</button>
                         </form>
                     </div>
                    
@@ -65,30 +63,24 @@
                                         aria-controls="nav-about" aria-selected="true">
                                     Description
                                 </button>
-                           
+                            </div>
                         </nav>
                         <div class="tab-content mb-5">
                             <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
                                 <p>
                                  @Model.ShortDescription
                                 </p>
-                               
                             </div>
-                          
                         </div>
                     </div>
-                  
                 </div>
             </div>
             <div class="col-lg-4 col-xl-3">
-                 <div class="row g-4 fruite">
-                     @await Html.PartialAsync("SearchPanel")
+                <div class="row g-4 fruite">
+                    @await Html.PartialAsync("SearchPanel")
                     @await Component.InvokeAsync("ProductType")
                 </div>
-                </div>
-                </div>
-                </div> 
             </div>
-        </div> 
-       
+        </div>
     </div>
+</div>

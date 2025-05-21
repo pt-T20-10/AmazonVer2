@@ -55,10 +55,10 @@
                 </button>
                 <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <a asp-action="Index" asp-controller="CustomerHome" class="nav-item nav-link active">Home</a>
-                        <a asp-action="Index" asp-controller="CustomerProduct" class="nav-item nav-link">Shop</a>
+                        <a asp-action="Index" asp-controller="CustomerHome" class="nav-item nav-link fs-4">Home</a>
+                        <a asp-action="Index" asp-controller="CustomerProduct" class="nav-item nav-link fs-4">Shop</a>
                    <div class="nav-item dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Member</a>
+								<a href="#" class="nav-link dropdown-toggle fs-4" data-bs-toggle="dropdown">Member</a>
 								<div class="dropdown-menu m-0 bg-secondary rounded-0">
 									<a asp-controller="Cart" asp-action="Index" class="dropdown-item">Cart</a>
 									@if (User.Identity.IsAuthenticated)
@@ -74,8 +74,9 @@
 									}
 								</div>
 							</div>
+                        <a asp-action="Index" asp-controller="AdminProduct" asp-area="Admin" class="nav-item nav-link fs-4">Go to Admin <i class="fa fa-clipboard"></i></a>
                     </div>
-                    <a asp-action="Index" asp-controller="AdminProduct" asp-area="Admin" class="nav-item nav-link">Go to Admin</a>
+                   
                     <div class="d-flex m-3 me-0">
                         @await Component.InvokeAsync("Cart")
                         <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>

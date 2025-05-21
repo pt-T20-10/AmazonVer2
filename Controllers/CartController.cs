@@ -23,7 +23,8 @@ namespace AmazonWebsite.Controllers
         {
             return View(Cart);
         }
-     
+
+        [Authorize]     
         public IActionResult AddToCart(int id, int quantity =1)
         {
             var mCart = Cart;
